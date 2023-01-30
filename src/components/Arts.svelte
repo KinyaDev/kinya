@@ -1,12 +1,12 @@
 <script lang="ts">
 	export const get = async () => {
-		const allimgsf = import.meta.glob('../images/*.png');
+		const allimgsf = import.meta.glob('$lib/*.png');
 		const iterableImages = Object.entries(allimgsf);
 
 		const allimgs = await Promise.all(
 			iterableImages.map(async ([path, resolver]) => {
 				// @ts-ignore
-				const imgPath = path.slice(2, -3);
+				const imgPath = path.slice(1, -3);
 
 				addTrigger();
 

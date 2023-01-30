@@ -8,6 +8,10 @@
 	let addTrigger = () => artcount++;
 </script>
 
+<svelte:head>
+	<title>Kinya Website</title>
+</svelte:head>
+
 <div>
 	<div class="container">
 		<Header />
