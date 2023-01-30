@@ -19,14 +19,31 @@
 
 	.title {
 		font-family: 'bourton';
-		font-size: 900%;
+		font-size: 330%;
 		text-align: center;
 	}
 
 	.subtitle {
 		font-family: brandon;
 		font-style: italic;
-		font-size: 130%;
+		font-size: 90%;
 		text-align: center;
+	}
+
+	@media only screen and (min-width: 768px) {
+		/* For desktop: */
+
+		.title {
+			font-family: 'bourton';
+			font-size: 900%;
+			text-align: center;
+		}
+
+		.subtitle {
+			font-family: brandon;
+			font-style: italic;
+			font-size: 130%;
+			text-align: center;
+		}
 	}
 </style>
