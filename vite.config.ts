@@ -5,9 +5,6 @@ const config: UserConfig = {
 	plugins: [sveltekit()],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
-	},
-	build: {
-		outDir: './build'
 	}
 };
 
