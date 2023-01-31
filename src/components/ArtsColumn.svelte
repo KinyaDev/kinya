@@ -25,6 +25,7 @@
 			margin-top: 8px;
 			vertical-align: middle;
 			width: 100%;
+			-webkit-user-drag: none;
 		}
 	}
 
