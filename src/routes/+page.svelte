@@ -23,7 +23,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.container {
 		text-align: center;
 		align-items: center;
