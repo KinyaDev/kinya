@@ -8,7 +8,7 @@
 <div class="column">
 	{#each Object.values(fi) as f}
 		<div>
-			<img src={f.path + 'png'} alt={f.name} />
+			<img src={f.path + '.png'} alt={f.name} />
 			<p>{f.name}</p>
 		</div>
 	{/each}

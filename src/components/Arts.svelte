@@ -2,20 +2,20 @@
 	import ArtsColumn from './ArtsColumn.svelte';
 
 	export const get = async () => {
-		const allimgsf = import.meta.glob(`/static/images/*.png`);
-		
+		const allimgsf = import.meta.glob('$lib/images/*.png');
 		const iterableImages = Object.entries(allimgsf);
 
 		const allimgs = await Promise.all(
 			iterableImages.map(async ([path, resolver]) => {
+				// gets the resolved asset path
 				// @ts-ignore
-				const imgPath = path.slice(1, -3);
+				const imgPath = /** @type {{default: string;}} */ (await resolver()).default.slice(0, -4);
 
 				addTrigger();
 
 				return {
-					path: imgPath.slice(7),
-					name: imgPath.split('/').reverse()[0].replace(".","")
+					path: imgPath,
+					name: decodeURI(imgPath.split('/').at(-1)).split('-')[0]
 				};
 			})
 		);
