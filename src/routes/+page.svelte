@@ -1,15 +1,11 @@
 <script>
 	import About from '../components/About.svelte';
-	import Arts from '../components/Arts.svelte';
 	import Header from '../components/Header.svelte';
-	import { dev } from '$app/environment';
-	import { inject } from '@vercel/analytics';
+	import Navbar from '../components/Navbar.svelte';
+	// import { dev } from '$app/environment';
+	// import { inject } from '@vercel/analytics';
 
-	$: artcount = 0;
-
-	let addTrigger = () => artcount++;
-
-	inject({ mode: dev ? 'development' : 'production' });
+	// inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 <svelte:head>
@@ -18,12 +14,9 @@
 
 <div>
 	<div class="container">
+		<Navbar />
 		<Header />
 		<About />
-		<br />
-		<p>Il y a {artcount} publications</p>
-		<br />
-		<Arts {addTrigger} />
 	</div>
 </div>
 

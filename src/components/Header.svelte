@@ -1,6 +1,6 @@
 <div>
-	<h1 class="title">Kinya Projects</h1>
-	<h3 class="subtitle">Site personnel - Hebergeur d'illustration de projets & fanarts</h3>
+	<h1 class="title">Kinya Website</h1>
+	<h3 class="subtitle">Site personnel et de projets personnels</h3>
 </div>
 
 <style>
