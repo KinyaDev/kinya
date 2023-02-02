@@ -6,9 +6,6 @@
 	$: artcount = 0;
 
 	let addTrigger = () => artcount++;
-
-	import { inject } from '@vercel/analytics';
-	inject();
 </script>
 
 <svelte:head>

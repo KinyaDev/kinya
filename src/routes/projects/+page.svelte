@@ -4,8 +4,6 @@
 	import Navbar from '../../components/Navbar.svelte';
 	import Project from '../../components/Project.svelte';
 
-	import { inject } from '@vercel/analytics';
-	inject();
 </script>
 
 <svelte:head>
