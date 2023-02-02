@@ -3,10 +3,9 @@
 	import Header from '../../components/Header.svelte';
 	import Navbar from '../../components/Navbar.svelte';
 	import Project from '../../components/Project.svelte';
-	import { dev } from '$app/environment';
-	import { inject } from '@vercel/analytics';
 
-	inject({ mode: dev ? 'development' : 'production' });
+	import { inject } from '@vercel/analytics';
+	inject();
 </script>
 
 <svelte:head>
@@ -23,7 +22,6 @@
 			num={1}
 			description="Dans ce manga, rejoignez le dieu draconique amnésique réincarné dans un autre monde."
 			name="Qanthris"
-			link="#"
 		/>
 	</div>
 </div>
