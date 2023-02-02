@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import Arts from '../../components/Arts.svelte';
 	import Header from '../../components/Header.svelte';
 	import Navbar from '../../components/Navbar.svelte';
@@ -6,9 +7,6 @@
 	$: artcount = 0;
 
 	let addTrigger = () => artcount++;
-
-	import { inject } from '@vercel/analytics';
-	inject();
 </script>
 
 <svelte:head>
