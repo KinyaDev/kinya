@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from 'svelte';
 	import About from '../components/About.svelte';
 	import Header from '../components/Header.svelte';
 	import Navbar from '../components/Navbar.svelte';
@@ -10,7 +9,7 @@
 </svelte:head>
 
 <div>
-	<div class="container">
+	<div class="main">
 		<Navbar />
 		<Header />
 		<About />
@@ -18,7 +17,7 @@
 </div>
 
 <style lang="scss">
-	.container {
+	.main {
 		text-align: center;
 		align-items: center;
 		width: 100%;

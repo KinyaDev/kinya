@@ -1,7 +1,5 @@
-<div class="about">
-	<h2>À Propos</h2>
-	<br />
-	<div class="box">
+<div class="container about">
+	<div class="box animate__animated animate__zoomInDown">
 		<p>
 			Je m'appelle Noé, mais préfère être appelé
 			<a href="https://twitter.com/@kinyakemono" target="_blank" rel="noreferrer">Kinya</a>, qui est
@@ -23,7 +21,14 @@
 
 <style>
 	.about .box {
-		border: 1px solid black;
+		text-shadow: rgb(255 255 255 / 50%) -1px -1px 10px;
+		font-size: 1.3rem;
 		padding: 1%;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-bottom: 1%;
+		background-color: #dd6969;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+			rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 	}
 </style>

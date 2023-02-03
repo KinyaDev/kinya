@@ -9,7 +9,7 @@
 </svelte:head>
 
 <div>
-	<div class="container">
+	<div class="main">
 		<Navbar active="arts" />
 		<Header />
 		<br />

@@ -10,21 +10,21 @@
 </svelte:head>
 
 <div>
-	<div class="container">
+	<div class="main">
 		<Navbar active="projects" />
 		<Header />
-		<br />
-		<h2>Mes Projets</h2>
-		<Project
-			num={1}
-			description="Dans ce manga, rejoignez le dieu draconique amnésique réincarné dans un autre monde."
-			name="Qanthris"
-		/>
+		<div class="projects animate__animated animate__zoomInDown">
+			<Project
+				num={1}
+				description="Dans ce manga, rejoignez le dieu draconique amnésique réincarné dans un autre monde."
+				name="Qanthris"
+			/>
+		</div>
 	</div>
 </div>
 
 <style lang="scss">
-	.container {
+	.main {
 		text-align: center;
 		align-items: center;
 		width: 100%;
