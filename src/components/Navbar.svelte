@@ -22,7 +22,7 @@
 				<a class="nav-item nav-link {active === 'projects' ? 'active' : ''}" href="/projects"
 					>Projets</a
 				>
-				<a class="nav-item nav-link {active === 'prods' ? 'active' : ''}" href="#"
+				<a class="nav-item nav-link {active === 'prods' ? 'active' : ''}" href="#" aria-disabled
 					>Mes Réalisations</a
 				>
 			</div>

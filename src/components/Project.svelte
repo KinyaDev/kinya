@@ -2,14 +2,18 @@
 	export let num: number;
 	export let name: string;
 	export let description: string;
+	export let bannerURL: string = '';
 </script>
 
 <div class="project">
-	<p class="pr-cl">Projet n°{num}</p>
+	<p class="number">Projet n°{num}</p>
+	<img src={bannerURL} alt="" class="banner" />
 	<div class="stats">
 		<b>{name}</b>
 		<p>{description}</p>
-		<a href={`/projects/${name.toLowerCase()}`} rel="noreferrer">Rejoindre</a>
+		<a href="https://twitter.com/kinyascales" target="_blank" rel="noreferrer"
+			>Rejoindre les Projets</a
+		>
 	</div>
 </div>
 
@@ -17,16 +21,25 @@
 	* {
 		font-family: Arial, Helvetica, sans-serif;
 	}
-	.pr-cl {
-		padding-left: 5%;
-		text-align: left;
+
+	.banner {
+		width: 100%;
+		height: 80%;
+	}
+
+	.number {
+		left: 0;
+		padding-right: 8%;
+		position: absolute;
+		width: 100%;
 		text-decoration: underline;
+		text-align: right;
 		font-size: 1.2rem;
 		padding-top: 1%;
 		transition: all 0.4s 0.1s;
 	}
 
-	.pr-cl:hover {
+	.number:hover {
 		font-size: 1.26rem;
 	}
 
@@ -36,11 +49,19 @@
 	}
 
 	.project {
+		width: 40%;
+		height: 60%;
+		flex: 1;
 		margin-left: 5%;
 		margin-right: 5%;
 		padding-bottom: 1%;
 		background-color: #dd6969;
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
 			rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	}
+
+	.stats p {
+		padding-left: 1%;
+		padding-right: 1%;
 	}
 </style>
