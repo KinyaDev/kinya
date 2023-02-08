@@ -6,9 +6,9 @@
 </script>
 
 <div class="project">
-	<p class="number">Projet n°{num}</p>
 	<img src={bannerURL} alt="" class="banner" />
 	<div class="stats">
+		<p class="number">Projet n°{num}</p>
 		<b>{name}</b>
 		<p>{description}</p>
 		<a href="https://twitter.com/kinyascales" target="_blank" rel="noreferrer"
@@ -28,6 +28,8 @@
 	}
 
 	.number {
+		left: 0;
+		padding-right: 8%;
 		position: absolute;
 		width: 100%;
 		text-decoration: underline;
@@ -35,10 +37,6 @@
 		font-size: 1.2rem;
 		padding-top: 1%;
 		transition: all 0.4s 0.1s;
-	}
-
-	.number:hover {
-		font-size: 1.26rem;
 	}
 
 	.stats :first-child {
