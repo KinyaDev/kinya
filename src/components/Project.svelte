@@ -27,7 +27,7 @@
 		height: 80%;
 	}
 
-	.stats :first-child {
+	.stats b {
 		font-size: 2rem;
 		text-shadow: -1.5px -1.5px #b8b4b4;
 	}
