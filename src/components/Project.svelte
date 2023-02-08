@@ -27,18 +27,6 @@
 		height: 80%;
 	}
 
-	.number {
-		left: 0;
-		padding-right: 8%;
-		position: absolute;
-		width: 100%;
-		text-decoration: underline;
-		text-align: right;
-		font-size: 1.2rem;
-		padding-top: 1%;
-		transition: all 0.4s 0.1s;
-	}
-
 	.stats :first-child {
 		font-size: 2rem;
 		text-shadow: -1.5px -1.5px #b8b4b4;
