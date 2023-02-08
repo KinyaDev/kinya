@@ -28,6 +28,7 @@
 	}
 
 	.number {
+		position: absolute;
 		width: 100%;
 		text-decoration: underline;
 		text-align: right;
