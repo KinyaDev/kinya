@@ -24,6 +24,12 @@
 				name="Qanthris"
 				bannerURL="https://t4.ftcdn.net/jpg/04/04/73/39/360_F_404733910_2mIXr6RbC5G3WZJFjopVsBaR3EOM6Bqy.jpg"
 			/>
+			<Project
+				num={2}
+				description="Fournisseur de noms de fantasy à l'euphonie de Kinya. Vous pouvez utiliser des noms générés tous les jours pour votre diégèse."
+				name="Kinya STYLE!"
+				bannerURL="$lib/kinya-style.png"
+			/>
 		</div>
 	</div>
 </div>
