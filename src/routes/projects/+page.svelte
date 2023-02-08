@@ -28,7 +28,7 @@
 				num={2}
 				description="Fournisseur de noms de fantasy à l'euphonie de Kinya. Vous pouvez utiliser des noms générés tous les jours pour votre diégèse."
 				name="Kinya STYLE!"
-				bannerURL="$lib/kinya-style.png"
+				bannerURL="/kinya-style.png"
 			/>
 		</div>
 	</div>
